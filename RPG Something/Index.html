@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <title>Character Creation</title>
+    <link rel="stylesheet" href="/RPG Something/Index.css" />
+  </head>
+  <body>
+    <!-- Basic Character Info Panel -->
+    <div class="panel">
+      <h1 class="title">Character Creation</h1>
+      <div class="flex-row">
+        <label for="name">Name:</label>
+        <input class="InTxt" type="text" id="name" name="name" required />
+      </div>
+      <div class="flex-row">
+        <label for="gender">Gender:</label>
+        <select class="InTxt" id="genderSelect" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="flex-row">
+        <label for="race">Race:</label>
+        <select class="InTxt" id="raceSelect" name="race">
+          <option value="human">Human</option>
+          <option value="elf">Elf</option>
+          <option value="dwarf">Dwarf</option>
+          <option value="orc">Orc</option>
+        </select>
+      </div>
+      <div class="flex-row">
+        <button class="btnR" onclick="createCharacter()">
+          Create Character
+        </button>
+      </div>
+    </div>
+
+    <!-- Attributes/Skills Panel -->
+    <div class="panel">
+      <h2 class="title">Attributes</h2>
+      <div class="skill-points">
+        Remaining Skill Points: <span id="skillPoints">10</span>
+      </div>
+      <div class="skill-grid">
+        <!-- Combat Skills -->
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Attack</div>
+            <small>Combat</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Defense</div>
+            <small>Combat</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Strength</div>
+            <small>Combat</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Constitution</div>
+            <small>Combat</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Magic</div>
+            <small>Combat</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <!-- Resource Skills -->
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Perception</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Speech</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Woodcutting</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Mining</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Smithing</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Crafting</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Construction</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Lockpicking</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Mercantile</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Cooking</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Fishing</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Medicine</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+        <div class="skill-card">
+          <button class="btn-skill">-</button>
+          <div>
+            <div>Farming</div>
+            <small>Resource</small>
+          </div>
+          <div class="skill-level">0</div>
+          <button class="btn-skill">+</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function createCharacter() {
+        const name = document.getElementById("name").value;
+        const gender = document.getElementById("genderSelect").value;
+        const race = document.getElementById("raceSelect").value;
+        console.log("Character Created:", { name, gender, race });
+        alert("Character " + name + " created!");
+      }
+    </script>
+  </body>
+</html>

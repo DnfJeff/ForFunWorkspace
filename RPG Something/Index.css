@@ -1,0 +1,92 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Reusable panel styling */
+.panel {
+  color: #0f1419;
+  border: 2px solid #cfd9de;
+  border-radius: 20px;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
+
+/* Flex row for aligning form elements */
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Centered title styling */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f1419;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.btnR {
+  margin-left: auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0f1419;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Input and select field styling */
+.InTxt {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex: 1;
+}
+
+/* Flex grid for attributes/skills */
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Each skill card styling */
+.skill-card {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 calc(33% - 20px);
+  background: #fff;
+  border: 1px solid #cfd9de;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+.btn-skill {
+  padding: 5px 10px;
+  border: none;
+  background-color: #0f1419;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.skill-level {
+  font-size: 24px; /* adjust size as needed */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
